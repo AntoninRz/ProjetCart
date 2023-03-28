@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/css/style.css" />
+
+    <title>Projet en carte</title>
+  </head>
+  <body>
+    <!-- Le titre du projet -->
+    <section id="project" class="projects">
+        <h2 class="projects__title">Mes projets en carte</h2>
+        
+        <!-- Les projets (cartes) -->
+        <section id="cards" class="cards">
+          <div class="card">
+            <h3 class="card__title">Mon premier projet de décoration maison</h3>
+            <img class="card__img" src="./assets/media/WOOD PLAN'S.jpg" alt="wood plan's" />
+            <p class="card__text">
+              Ce projet de décoration est un site pour voir mes décoration sous
+              forme de cartes.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Mon premier projet de rhum arrangé</h3>
+            <img class="card__img"
+              src="./assets/media/Recette de Rhum arrangé au gingembre, vanille et cannelle.jpg"
+              alt="Recette de Rhum arrangé au gingembre, vanille et cannelle"
+            />
+            <p class="card__text">
+              Ce projet de rhum arrangé est un site portefolio de tous mes projets
+              sous forme de cartes.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">
+              Mon premier projet d'image de verre de Wisky
+            </h3>
+            <img class="card__img" src="./assets/media/Verre de wisky.jpg" alt="verre de wisky" />
+            <p class="card__text">
+              Ce projet d'image de verre de Wisky est un site portefolio
+              d'illustration de verre de wisky sous forme de cartes.
+            </p>
+          </div>
+        </section>
+    </section>
+
+    <!-- FORMULAIRE -->
+    <section id="new-project" class="new-project">
+      <h2 class="new-project__title">Ajouter un projet à mon portefolio</h2>
+      <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
+       <div class="new-project-form__imput-group">
+            <label for="project-title">Titre du projet</label>
+            <input type="text" name="new-project__title" id="project-title"/>
+        </div>
+        <div class= "new-project-form__imput-group">
+            <label for="project-img-link">Lien vers une image en ligne</label>
+            <input type="text" name="project-img-link" id="project-img-link"/>
+        </div>
+        <div class="new-project-form__imput-group new-project-form__imput-group--textarea">
+            <label for="project-text">Description du projet</label><br />
+            <textarea name="project-text" id="project-text" rows="10"></textarea>
+        </div>
+            <button type="submit" class="new-project__button">Créer le project</button>
+      </form>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
